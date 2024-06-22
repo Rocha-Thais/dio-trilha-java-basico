@@ -1,5 +1,13 @@
-public class App {
+public class TiposVariaveis {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+                       
+
+        //Variavel constante, acrescenta 'final' no início e nome da variável em CAIXA ALTA
+
+        final double SALARIO = 15000;
+
+        System.out.printf("%.2f", SALARIO);
+
+
     }
 }
