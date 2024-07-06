@@ -10,19 +10,20 @@ public class App {
         
         Scanner sc = new Scanner (System.in);
 
-        System.out.print("Digite a senha: ");
-        int senha = sc.nextInt();
+        int senha;
 
         do {
-
-            System.out.print("Senha inválida. Tente novamente: ");
+            System.out.print("Digite a senha: ");
             senha = sc.nextInt();
+
+            if (senha != 2023) {
+                System.out.println("Senha inválida. Tente novamente.");
+            }
 
         } while (senha != 2023);
 
-        System.out.print("Acesso Permitido");
+        System.out.println("Acesso Permitido");
 
         sc.close();
-
     }
 }
